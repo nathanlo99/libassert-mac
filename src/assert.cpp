@@ -34,7 +34,7 @@
  #undef min // fucking windows headers, man
  #undef max
  #define USE_DBG_HELP_H
-#elif defined(__linux)
+#elif defined(__linux) || defined(__APPLE__)
  #define IS_LINUX 1
  #include <execinfo.h>
  #include <climits>
